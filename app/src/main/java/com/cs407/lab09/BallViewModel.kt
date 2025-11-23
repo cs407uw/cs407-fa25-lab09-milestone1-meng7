@@ -16,7 +16,7 @@ class BallViewModel : ViewModel() {
 
     private val _ballPosition = MutableStateFlow(Offset.Zero)
     val ballPosition: StateFlow<Offset> = _ballPosition.asStateFlow()
-    private val SIMULATION_RATE = 300f
+    private val SIMULATION_RATE = 400f
 
     fun initBall(fieldWidth: Float, fieldHeight: Float, ballSizePx: Float) {
         if (ball == null) {
